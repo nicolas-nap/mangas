@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Mangas{% endblock %}
+
+{% block body %}
+    <h1>Edit Mangas</h1>
+
+    {{ include('mangas/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('mangas_index') }}">back to list</a>
+
+    {{ include('mangas/_delete_form.html.twig') }}
+{% endblock %}

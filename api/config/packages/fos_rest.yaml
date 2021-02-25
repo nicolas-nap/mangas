@@ -1,0 +1,26 @@
+#config/packages/fos_rest.yaml
+
+# Read the documentation: https://symfony.com/doc/master/bundles/FOSRestBundle/index.html
+fos_rest:
+    param_fetcher_listener: true
+    allowed_methods_listener: true
+    routing_loader: false
+    view:
+        view_response_listener: true
+    exception:
+        # exception_controller: "fos_rest.exception.controller:showAction"
+        debug: "%env(bool:APP_DEBUG)%"
+        codes:
+            Symfony\Component\HttpKernel\Exception\NotFoundHttpException: 404
+        messages:
+            Symfony\Component\HttpKernel\Exception\NotFoundHttpException: false
+    # format_listener:
+    #     rules:
+    #         - {
+    #               path: ^/,
+    #               prefer_extension: true,
+    #               fallback_format: json,
+    #               priorities: [json],
+    #           }
+    # if one day we have admin we might want html and not json response for /admin
+    #- { path: ^/admin, prefer_extension: true, fallback_format: html, priorities: [ html ] }

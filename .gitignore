@@ -1,0 +1,15 @@
+.DS_Store
+.idea
+php-cs-fixer.phar
+/front/nbproject
+/api/nbproject
+npm-debug.log
+.php_cs.cache
+/tests/nbproject/private/
+heclipce.sublime-project
+heclipce.sublime-workspace
+docker-env/*.sh
+env
+api_access.log
+api_error.log
+.vscode

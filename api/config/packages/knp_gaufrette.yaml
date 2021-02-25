@@ -1,0 +1,10 @@
+knp_gaufrette:
+    adapters:
+        mangas:
+            local:
+                directory: ../src/documents/mangas/
+                create:     true
+    filesystems:
+        mangas:
+            adapter:    local
+            alias:      mangas_filesystem
